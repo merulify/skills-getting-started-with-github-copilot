@@ -37,6 +37,7 @@ main {
 
 @media (min-width: 768px) {
   main {
+    display: grid; /* enable grid for the template below */
     grid-template-columns: 2fr 1fr;
   }
 }
@@ -72,6 +73,42 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.activity-card .participants {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #e2e2e2;
+  background: linear-gradient(to bottom, #f9f9f9, #ffffff);
+  border-radius: 4px;
+}
+
+.activity-card .participants h5 {
+  margin-bottom: 6px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #1a237e;
+}
+
+.activity-card .participants-list {
+  list-style: disc;
+  margin-left: 18px;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.activity-card .participants-list li {
+  font-size: 14px;
+  padding: 2px 0;
+  color: #333;
+  word-break: break-word;
+}
+
+.activity-card .participants-list li.empty {
+  list-style: none;
+  font-style: italic;
+  color: #777;
 }
 
 .form-group {
